@@ -4,7 +4,7 @@ $("/").get(function(request, response) {
 	$.writeFile("index.html");
 });
 
-$("/test").post(function(request, response, querystring, data) {
+$(new RegExp("/test")).post(function(request, response, querystring, data) {
 	console.log(data);
 	$.write(data.sample);
 });
