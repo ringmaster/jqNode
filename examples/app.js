@@ -9,4 +9,4 @@ $(new RegExp("/test")).post(function(request, response, querystring, data) {
 	$.write(data.sample);
 });
 
-$.start(8888, true);
+$.start({debug: true});
