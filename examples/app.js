@@ -9,4 +9,4 @@ $(new RegExp("/test")).post(function(request, response, querystring, data) {
 	$.write(data.sample);
 });
 
-$.start({debug: true});
+$.start({debug: true, docroot: __dirname + '/htdocs'});
